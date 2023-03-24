@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        #img1{
+            float: right;
+        }
+        #img2{
+            float: right;
+            /* agr hum chahte hain ki img2 ke left right me koi img na aaye then we use clear: both/leftlright; */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h3>float and clear</h3>
+    <p>
+        this tutorial will tell us about float and clear features used in css.
+        <img id="img1" src="data:image/png;base64,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" alt="right float">
+        <img id="img2" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2021/03/clearedfooter.png?resize=540%2C230&ssl=1" alt="clearcommand">
+        this is the image to understand float right. <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ex earum aliquam magni, soluta ratione illum in alias blanditiis eum iste obcaecati eos voluptate molestiae!
+    </p>
+</body>
+</html>
