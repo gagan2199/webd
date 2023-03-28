@@ -14,9 +14,16 @@
                 background-color: antiquewhite;
                 display: flex;
                 /* flex-direction: column; */
-                flex-direction: row;
+                /* flex-direction: row;
+                flex-wrap: wrap; */
                 flex-wrap: wrap;
                 flex: row wrap;
+                justify-content: center;
+                /* justify-content: space-between; */
+
+                align-items: center;
+
+
 
             }
             .item{
@@ -29,10 +36,14 @@
             }
 
             #item1 {
-                
+                /* order: 5; */
+                /* flex: 2 3 100px; */
             }
 
-            #item2 {}
+            #item2 {
+                /* order: 7; */
+                align-self: flex-end;
+            }
     </style>
 </head>
 
