@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap');
+        *{
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: beige;
+        }
+
+        nav{
+            background-color: black;
+            color: white;
+        }
+
+        .navcmp{
+            display: flex;
+            list-style: none;
+            margin-left: 80px;
+           
+        }
+
+        .navcmp li{
+            margin: 5px 30px;
+            font-weight: bolder;
+        }
+
+        .navcmp li:hover{
+            cursor: pointer;
+        }
+
+        aside ul{
+            background-color: gray;
+            display: flex;
+            flex-direction: column;
+            width: 8%;
+            height: 600px;
+            display: flex;
+           
+        }
+
+        aside ul li{
+            list-style: none;
+            /* margin-bottom: 20px;
+            margin-left: 5px; */
+            margin: 20px 5px;
+            /* text-align: center; */
+            justify-content: center;
+            font-weight: bold;
+
+
+        }
+        aside ul li:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+       <ul class="navcmp">
+        <li>Home</li>
+        <li>About</li>
+        <li>Help</li>
+       </ul>
+    </nav>
+
+    <aside>
+        <ul>
+            <li>Topics</li>
+            <li>Introduction</li>
+            <li>Indexes</li>
+            <li>Pages</li>
+            <li>Content</li>
+        </ul>
+    </aside>
+
+</body>
+</html>
