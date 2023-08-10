@@ -11,9 +11,11 @@
             font-family: 'Ubuntu', sans-serif;
             margin: 0px;
             padding: 0px;
+            
         }
         body{
             background-color: beige;
+            
         }
 
         nav{
@@ -37,8 +39,13 @@
             cursor: pointer;
         }
 
-        aside ul{
+        section{
+            display: flex;
+        }
+
+        section ul{
             background-color: gray;
+            /* color: white; */
             display: flex;
             flex-direction: column;
             width: 8%;
@@ -47,19 +54,34 @@
            
         }
 
-        aside ul li{
+        section ul li{
             list-style: none;
             /* margin-bottom: 20px;
             margin-left: 5px; */
             margin: 20px 5px;
             /* text-align: center; */
             justify-content: center;
-            font-weight: bold;
+          
 
 
         }
-        aside ul li:hover{
+        section ul li:hover{
             cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+            size: 16;
+        }
+
+        .sec1{
+            background-color: blue;
+            display: flex;
+            width: auto;
+           
+        }
+
+        .sec1 p{
+            margin-top: 20px;
+            margin-left: 5px;
         }
 
     </style>
@@ -73,7 +95,7 @@
        </ul>
     </nav>
 
-    <aside>
+    <section class="mainsec">
         <ul>
             <li>Topics</li>
             <li>Introduction</li>
@@ -81,7 +103,14 @@
             <li>Pages</li>
             <li>Content</li>
         </ul>
-    </aside>
+
+        <section class="sec1">
+            <p >this is only the layout of a website. in future we can add here our personal information like study,hometown,city,state etc. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat qui maiores, numquam illum nobis quis doloribus deleniti, dolor in non voluptas laboriosam distinctio, eos officia quos omnis. Vero, deleniti nam cupiditate debitis tenetur alias. </p>
+        </section>
+
+    </section>
+
+   
 
 </body>
 </html>
